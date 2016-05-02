@@ -28,7 +28,7 @@
     "minimum-stability": "0.1",
     "autoload": {
         "psr-4": {
-            "Insebre\\Ebre-escool-ng-installer\\": "src/"
+            "Insebre\\EbreescoolngInstaller\\": "src/"
         }
     }
 }
