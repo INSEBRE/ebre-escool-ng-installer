@@ -24,7 +24,7 @@
             "email": "pdavila13@gmail.com"
 
         }
-    ],
+    ], 
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
