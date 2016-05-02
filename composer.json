@@ -1,5 +1,5 @@
 {
-    "name": "roger/ebre-escool-ng-installer",
+    "name": "insebre/ebre-escool-ng-installer",
     "description": "ebre-escool ng is an application management schools",
     "keywords": ["laravel","adminlte","pratt","bootstrap","theme","admin","html","javascript"],
     "require": {
@@ -28,7 +28,7 @@
     "minimum-stability": "0.1",
     "autoload": {
         "psr-4": {
-            "Roger\\Ebre-escool-ng-installer\\": "src/"
+            "Insebre\\Ebre-escool-ng-installer\\": "src/"
         }
     }
 }
