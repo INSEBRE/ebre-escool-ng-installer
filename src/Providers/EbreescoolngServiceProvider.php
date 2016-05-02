@@ -18,10 +18,10 @@ class EbreescoolngServiceProvider extends ServiceProvider
             define('EBREESCOOLNGADMINLTETEMPLATE_PATH', realpath(__DIR__.'/../../'));
         }
         if ($this->app->runningInConsole()) {
-            $this->commands([\Insebre\EbreescoolngInstaller\Console\EbreescoolAdminLTE::class]);
+            $this->commands([\Insebre\EbreescoolngInstaller\Console\EbreescoolngAdminLTE::class]);
         }
         $this->app->bind('EbreescoolngAdminLTE', function () {
-            return new \Insebre\EbreescoolngInstaller\EbreescoolAdminLTE();
+            return new \Insebre\EbreescoolngInstaller\EbreescoolngAdminLTE();
         });
     }
     /**
@@ -54,21 +54,21 @@ class EbreescoolngServiceProvider extends ServiceProvider
      */
     private function publishHomeController()
     {
-        $this->publishes(EbrescoolngAdminLTE::homeController(), 'ebreescoolngadminlte');
+        $this->publishes(EbreescoolngAdminLTE::homeController(), 'ebreescoolngadminlte');
     }
     /**
      * Change default Laravel AuthController.
      */
     private function changeAuthController()
     {
-        $this->publishes(EbrescoolngAdminLTE::authController(), 'ebreescoolngadminlte');
+        $this->publishes(EbreescoolngAdminLTE::authController(), 'ebreescoolngadminlte');
     }
     /**
      * Publish public resource assets to Laravel project.
      */
     private function publishPublicAssets()
     {
-        $this->publishes(EbrescoolngAdminLTE::publicAssets(), 'ebreescoolngadminlte');
+        $this->publishes(EbreescoolngAdminLTE::publicAssets(), 'ebreescoolngadminlte');
     }
     /**
      * Publish package views to Laravel project.
@@ -76,20 +76,20 @@ class EbreescoolngServiceProvider extends ServiceProvider
     private function publishViews()
     {
         $this->loadViewsFrom(EBREESCOOLNGADMINLTETEMPLATE_PATH.'/resources/views/', 'ebreescoolngadminlte');
-        $this->publishes(EbrescoolngAdminLTE::views(), 'ebreescoolngadminlte');
+        $this->publishes(EbreescoolngAdminLTE::views(), 'ebreescoolngadminlte');
     }
     /**
      * Publish package resource assets to Laravel project.
      */
     private function publishResourceAssets()
     {
-        $this->publishes(EbrescoolngAdminLTE::resourceAssets(), 'ebreescoolngadminlte');
+        $this->publishes(EbreescoolngAdminLTE::resourceAssets(), 'ebreescoolngadminlte');
     }
     /**
      * Publish package tests to Laravel project.
      */
     private function publishTests()
     {
-        $this->publishes(EbrescoolngAdminLTE::tests(), 'ebreescoolngadminlte');
+        $this->publishes(EbreescoolngAdminLTE::tests(), 'ebreescoolngadminlte');
     }
 }

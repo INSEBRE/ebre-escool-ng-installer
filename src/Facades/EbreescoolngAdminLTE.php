@@ -11,6 +11,6 @@ class EbreescoolngAdminLTE extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'EbreescoolAdminLTE';
+        return 'EbreescoolngAdminLTE';
     }
 }

@@ -4,12 +4,12 @@ use Illuminate\Console\Command;
 /**
  * Class AdminLTE.
  */
-class AdminLTE extends Command
+class EbreescoolngAdminLTE extends Command
 {
     /**
      * The name and signature of the console command.
      */
-    protected $signature = 'adminlte-laravel:install';
+    protected $signature = 'ebre-escool-ng:install';
     /**
      * The console command description.
      *
@@ -34,35 +34,35 @@ class AdminLTE extends Command
      */
     private function installHomeController()
     {
-        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolAdminLTE::homeController());
+        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolngAdminLTE::homeController());
     }
     /**
      * Install Auth controller.
      */
     private function installAuthController()
     {
-        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolAdminLTE::authController());
+        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolngAdminLTE::authController());
     }
     /**
      * Install public assets.
      */
     private function installPublicAssets()
     {
-        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolAdminLTE::publicAssets());
+        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolngAdminLTE::publicAssets());
     }
     /**
      * Install views.
      */
     private function installViews()
     {
-        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolAdminLTE::views());
+        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolngAdminLTE::views());
     }
     /**
      * Install resource assets.
      */
     private function installResourceAssets()
     {
-        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolAdminLTE::resourceAssets());
+        $this->install(\Insebre\EbreescoolngInstaller\Facades\EbreescoolngAdminLTE::resourceAssets());
     }
     /**
      * Install files from array.
