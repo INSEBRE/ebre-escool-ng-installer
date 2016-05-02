@@ -25,7 +25,7 @@
 
         }
     ],
-    "minimum-stability": "v1.0",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Insebre\\EbreescoolngInstaller\\": "src/"
